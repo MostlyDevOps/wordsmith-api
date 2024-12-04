@@ -4,7 +4,7 @@ Wordsmith will display a random set of words every time you refresh the page. It
 
 The demo runs across three apps:
 
-- **web** - a Go web application that calls the API and builds words into sentences
+- [**web**](https://github.com/MostlyDevOps/wordsmith-web) - a Go web application that calls the API and builds words into sentences
 - **api** - a Java REST API which serves words read from the database
 - **db** - a Postgres database that stores words
 
