@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn verify
 
 # Run stage
-FROM --platform=${TARGETPLATFORM} amazoncorretto:20
+FROM --platform=${TARGETPLATFORM} amazoncorretto:23
 WORKDIR /app
 COPY --from=build /home/lab/target .
 ENTRYPOINT ["java", "-Xmx8m", "-Xms8m", "-jar", "/app/words.jar"]
